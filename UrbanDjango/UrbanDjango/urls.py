@@ -21,7 +21,7 @@ from task3.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',main),
-    path('class/',class_tmpl),
+    path('class/',class_tmpl.as_view()),
     path('func/',func_tmpl),
     path('card/',card),
     path('price/',price),
